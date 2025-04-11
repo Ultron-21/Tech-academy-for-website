@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+
+body {
+  background: linear-gradient(68.15deg, #161616 16.62%, #545454 85.61%);
+color: whitesmoke;
+}
+
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #161616;
+ border-radius: 20px;
+  border-bottom: 4px solid #9e9a9a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+}
+
+.menu.scrolled {
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom: none;
+}
+
+.logo{
+  height: 65px;
+}
+
+.itens-menu{
+  display: flex;
+  gap: 32px;
+}
+
+.icon{
+  height: 65px;
+}
+
+.Primeira-menu-item {
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+
+.conteudo-principal{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+  flex-direction: column;
+  margin: 30px;
+  padding: 40px;
+
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  margin: 0;
+}
+
+.conteudo-principal-escrito-sub {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  
+}
+
+.conteudo-principal-escrito-butão {
+  cursor: pointer;
+  background-color: #222222;
+  width: 180px;
+  height: 60px;
+  box-shadow: 4px 5px 4px rgba(22, 19, 19, 0.301);
+  border-radius: 20px;
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  color: whitesmoke;
+}
+
+.conteudo-principal-escrito-butão:hover {
+  background-color: #8f8d8d;
+  color: rgb(0, 0, 0);
+}
+
+.conteudo-menu-escrito-butão {
+  cursor: pointer;
+  background-color: #222222;
+  width: 110px;
+  height: 40px;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.301);
+  border-radius: 20px;
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: whitesmoke;
+  
+
+}
+
+.conteudo-menu-escrito-butão:hover{
+  background-color: #8f8d8d;
+  color: rgb(0, 0, 0);
+}
+
+.active {
+  height: 450px;
+}
+
+.conteudo-mostruario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.videojogotexto{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.conteudo-secundario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rodape-imagem{
+  padding: 60px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+}
+
+.conteudo-secundario-paragrafo{
+  display: list-item;
+}
+
+.videojogo{
+  border: 2px solid white; 
+    border-radius: 8px; 
+    padding: 10px; 
+    display: block; 
+    
+}
+
+.videojogo:hover{
+  border-color: #201a24; /* Altere para a cor */
+  box-shadow: 0 0 15px rgba(192, 176, 199, 0.8);
+}
+
+@media (max-width: 1024px) {
+
+
+  .conteudo-principal-escrito {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .videojogo video {
+    width: 100%;
+    height: auto;
+    
+  }
+  .active {
+    height: auto;
+    width: 90%;
+    max-width: 350px;
+  }
+
+  
+  
+
+  .menu {
+   
+    gap: 16px;
+    
+  }
+
+  .texto-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .conteudo-secundario-paragrafo {
+    text-align: center;
+    list-style: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .conteudo-principal-escrito-titulo {
+    font-size: 36px;
+  }
+
+  .conteudo-principal-escrito-sub {
+    font-size: 16px;
+  }
+
+  .conteudo-principal-escrito-butão {
+    width: 140px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .rodape-imagem {
+    height: 36px;
+    padding: 30px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .icon{
+    height: 50px;
+    
+  }
+
+  .Primeira-menu-item {
+    font-size: 18px;
+  }
+}
+
+.mobile-icon{
+  display: none;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+  .texto-menu {
+      padding: 1.5rem 4rem;
+  }
+
+  .Primeira-menu-item {
+      display: none;
+  }
+
+  .conteudo-menu-escrito-butão {
+      display: none;
+  }
+
+  .mobile-icon {
+      display: block;
+      
+     
+  }
+
+  .mobile-icon button {
+    
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+     
+  }
+}
+
+.mobile-menu :hover{
+ display: block;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.mobile-menu .Primeira-menu-item {
+  display: block;
+  padding-top: 1.2rem;
+}
+
+.mobile-menu .conteudo-menu-escrito-butão {
+  display: block;
+  padding: 1rem 2rem;
+ 
+}
+
+
+
+
+
+.mobile-menu .conteudo-menu-escrito-butão button {
+  width: 100%;
+
+}
+
+.open{
+  display: block;
+}
