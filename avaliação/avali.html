@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="top.png" rel="shortcart icon">
+    <title>Avaliação com Estrelas</title>
+  
+    <style>
+        body {
+            background-color: #222;
+            color: whitesmoke;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+           
+        }
+        .stars {
+            display: flex;
+            justify-content: center;
+            direction: rtl; /* Inverte a direção para clicar corretamente */
+        }
+        .stars input {
+            display: none;
+        }
+        .stars label {
+            font-size: 2rem;
+            color: #ccc;
+            cursor: pointer;
+        }
+        .stars input:checked ~ label,
+        .stars label:hover,
+        .stars label:hover ~ label {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Avalie nosso serviço</h2>
+    <div class="stars">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+    </div>
+    <h4>Obrigado pela colaboração ❤︎</h4>
+</body>
+</html>
