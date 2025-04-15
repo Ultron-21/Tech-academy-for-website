@@ -4,6 +4,8 @@
 body {
   background: linear-gradient(68.15deg, #161616 16.62%, #545454 85.61%);
 color: whitesmoke;
+margin: 0;
+  padding: 0;
 }
 
 .menu {
@@ -52,10 +54,30 @@ color: whitesmoke;
   text-decoration: none;
 }
 
-
+form {
+  background-color: #312e2e;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.315);
+      width: 100%;
+      max-width: 400px;
+      font-family: "Teko", sans-serif;
+      font-size: 20px;
+      border: 4px solid #9e9a9a;
+}
+input, textarea, button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: whitesmoke;
+  background-color: #161616;
+  border-radius: 40px;
+  
+}
 
 .conteudo-principal{
-  height: 100vh;
+  height: 95vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -106,7 +128,7 @@ color: whitesmoke;
   background-color: #222222;
   width: 110px;
   height: 40px;
-  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.301);
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.541);
   border-radius: 20px;
   font-family: "Teko", sans-serif;
   font-weight: 700;
@@ -122,53 +144,122 @@ color: whitesmoke;
 }
 
 .active {
-  height: 450px;
+  height: 250px;
+  margin: 40px;
+ 
 }
 
 .conteudo-mostruario{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-  margin-top: 48px;
+ border: 4px solid #9e9a9a;
+  margin-top: 60px;
+  padding: 0;
+  height: 100vh;
+  margin: 0;
+  box-shadow: 0 0 30px rgb(109, 108, 108);
+ background-color:#312e2e;
+  
+  
+  
+}
+.img-git{
+  height: 200px;
+  margin: 20px;
+  
+}
+
+
+.video{
+  border-radius: 40px;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+  border: solid black
 }
 
 .videojogotexto{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  padding: 20px;
+  font-family: "Teko", sans-serif;
 }
 
+
+
 .conteudo-secundario{
+  height: 100vh;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
   margin-top: 48px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Teko", sans-serif;
 }
 
 .rodape-imagem{
-  padding: 60px;
+  
+  padding-bottom: 60px;
   height: 44px;
   display: block;
   margin: 0 auto;
 }
+.rodape{
+  display: flex;
+  flex-direction: column;
+  
+  background-color: #0f0d0d;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
 
+}
+
+.icon-footer{
+  
+  width: 25px;
+
+}
+
+.icon-footer:hover{
+  width: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgb(223, 217, 217);
+
+}
+
+
+.icons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+ 
+
+}
+
+.texto-footer{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  font-size: 15px;
+  padding-bottom: 50px;
+}
 .conteudo-secundario-paragrafo{
   display: list-item;
 }
 
 .videojogo{
-  border: 2px solid white; 
+  height: auto;
+  margin: 20px;
+  align-items: center;
     border-radius: 8px; 
-    padding: 10px; 
+    padding: 20px; 
     display: block; 
+    
     
 }
 
-.videojogo:hover{
-  border-color: #201a24; /* Altere para a cor */
-  box-shadow: 0 0 15px rgba(192, 176, 199, 0.8);
-}
+
 
 @media (max-width: 1024px) {
 
@@ -183,6 +274,12 @@ color: whitesmoke;
     height: auto;
     
   }
+
+  .img-git{
+    width: 200px;
+    height: auto;
+  }
+
   .active {
     height: auto;
     width: 90%;
@@ -272,7 +369,6 @@ color: whitesmoke;
   }
 
   .mobile-icon button {
-    
       background-color: transparent;
       border: none;
       cursor: pointer;
@@ -284,23 +380,29 @@ color: whitesmoke;
  display: block;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 1rem;
+ 
 }
 
 .mobile-menu .Primeira-menu-item {
   display: block;
-  padding-top: 1.2rem;
+
 }
+
+
 
 .mobile-menu .conteudo-menu-escrito-butão {
   display: block;
-  padding: 1rem 2rem;
+  text-align: center;
  
 }
 
+.mobile-menu .botão-menu{
+  align-items: center;
+}
 
-
-
+*{
+  text-decoration: none;
+}
 
 .mobile-menu .conteudo-menu-escrito-butão button {
   width: 100%;
